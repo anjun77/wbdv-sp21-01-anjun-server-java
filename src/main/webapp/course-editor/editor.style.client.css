@@ -1,0 +1,40 @@
+.color-teal {
+  color: teal;
+}
+
+ul {
+  background: #7A7574;
+  padding: 15px
+}
+
+ul li {
+  background: #038387;
+  margin: 6px;
+}
+
+.center {
+  margin-left:auto;
+  margin-right: auto;
+  width: 40%;
+  display:block;
+}
+
+ul-tab {
+  background: #7A7574;
+  padding: 10px
+}
+
+ul-tab li {
+  background: #7A7574;
+  margin: 6px;
+}
+
+ul-pill {
+  background: white;
+  padding: 5px;
+}
+
+ul-pill li {
+  background: #038387;
+  margin: 6px;
+}
