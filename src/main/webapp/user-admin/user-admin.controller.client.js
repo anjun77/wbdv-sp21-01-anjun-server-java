@@ -46,7 +46,7 @@ function renderUsers(users) {
   for (var i = 0; i < users.length; i++) {
     var user = users[i]
     theTableBody
-    .prepend(`
+    .append(`
      <tr class="wbdv-template wbdv-user wbdv-hidden">
        <td class="wbdv-userName">${user.userName}</td>
        <td>&nbsp;</td>
