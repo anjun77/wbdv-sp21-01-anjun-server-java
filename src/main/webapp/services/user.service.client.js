@@ -43,5 +43,8 @@ function AdminUserServiceClient() {
   function deleteUser(userId) {
     return fetch(`${self.url}/${userId}`,
         {method: 'DELETE'})
+    .then(function(response) {
+      return response.json()
+    })
   }
 }

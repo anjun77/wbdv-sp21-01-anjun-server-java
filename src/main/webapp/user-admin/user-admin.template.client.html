@@ -16,6 +16,7 @@
 <body>
 <div class="container-fluid">
   <h1>User Admin</h1>
+  <a href="../index.html" Home Page></a>
   <table class="table">
     <thead>
     <tr>
@@ -27,100 +28,47 @@
       <th>&nbsp;</th>
     </tr>
 
-    <tr>
-      <th><input class="form-control wbdv-username-fld"
-                 placeholder="Username"/></th>
-      <th><input class="form-control wbdv-password-fld"
-                 placeholder="Password"/></th>
-      <th><input class="form-control wbdv-firstname-fld"
-                 placeholder="First Name"/></th>
-      <th><input class="form-control wbdv-lastname-fld"
-                 placeholder="Last Name"/></th>
-      <th><select class="form-control wbdv-role-fld">
+    <tr class="wbdv-form">
+      <td>
+        <input class="form-control wbdv-username-fld"
+               tyoe="text"
+               placeholder="Username"/>
+      </td>
+      <td>
+        <input class="form-control wbdv-password-fld"
+               type="password"
+               placeholder="Password"/>
+      </td>
+      <td>
+        <input class="form-control wbdv-firstname-fld"
+               type="text"
+               placeholder="First Name"/>
+      </td>
+      <td>
+        <input class="form-control wbdv-lastname-fld"
+               type="text"
+               placeholder="Last Name"/>
+      </td>
+      <td>
+        <select class="form-control wbdv-role-fld">
         <option value="FACULTY">Faculty</option>
         <option value="STUDENT">Student</option>
         <option value="ADMIN">Admin</option>
-      </select></th>
-      <th><span class="pull-right" style="white-space: nowrap">
-        <button class="wbdv-create-btn">Create</button>
-        <button class="wbdv-update-btn">Update</button>
-<!--          <i class="fa-2x fa fa-plus wbdv-create"></i>-->
-<!--          <i class="fa-2x fa fa-check wbdv-update"></i>-->
-        </span></th>
+      </select>
+      </td>
+      <td>
+        <span class="pull-right" style="white-space: nowrap">
+          <i class="fa-2x fa fa-search wbdv-search"></i>
+          <i class="fa-2x fa fa-plus wbdv-create"></i>
+          <i class="fa-2x fa fa-check wbdv-update"></i>
+        </span>
+      </td>
     </tr>
     </thead>
 
     <tbody>
     <tr>
-      <td>tlee</td>
-      <td>&nbsp;</td>
-      <td>Tim</td>
-      <td>Birns Lee</td>
-      <td>Faculty</td>
-      <td>
-        <span class="pull-right">
-          <button>Remove</button>
-          <button>Edit</button>
-<!--          <i class="fa-2x fa fa-times wbdv-remove"></i>-->
-<!--          <i class="fa-2x fa fa-pencil wbdv-edit"></i>-->
-        </span>
-      </td>
-    </tr>
 
-    <tr>
-      <td>ada</td>
-      <td>&nbsp;</td>
-      <td>Ada</td>
-      <td>Lovelace</td>
-      <td>Faculty</td>
-      <td>
-        <span class="pull-right">
-          <button>Remove</button>
-          <button>Edit</button>
-        </span>
-      </td>
-    </tr>
-
-    <tr>
-      <td>cgaricia</td>
-      <td>&nbsp;</td>
-      <td>Charlie</td>
-      <td>Garcia</td>
-      <td>Student</td>
-      <td>
-        <span class="pull-right">
-          <button>Remove</button>
-          <button>Edit</button>
-        </span>
-      </td>
-    </tr>
-
-    <tr>
-      <td>dcraig</td>
-      <td>&nbsp;</td>
-      <td>Dan</td>
-      <td>Craig</td>
-      <td>Student</td>
-      <td>
-        <span class="pull-right">
-          <button>Remove</button>
-          <button>Edit</button>
-        </span>
-      </td>
-    </tr>
-
-    <tr>
-      <td>sbolivar</td>
-      <td>&nbsp;</td>
-      <td>Simon</td>
-      <td>Bolivar</td>
-      <td >Faculty</td>
-      <td>
-        <span class="pull-right">
-          <button>Remove</button>
-          <button>Edit</button>
-        </span>
-      </td>
     </tr>
     </tbody>
   </table>
