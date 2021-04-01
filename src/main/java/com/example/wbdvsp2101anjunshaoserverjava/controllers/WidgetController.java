@@ -20,7 +20,7 @@ public class WidgetController {
   WidgetService service;// = new WidgetService();
 
   @PostMapping("/api/topics/{tid}/widgets")
-  public Widget createWidgetForTopic(
+  public Widget createWidget(
       @PathVariable("tid") String topicId,
       @RequestBody Widget widget) {
     widget.setTopicId(topicId);
