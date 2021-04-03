@@ -26,7 +26,8 @@ public class WidgetService {
 //        widgets.add(w4);
 //    }
   // implement crud operations
-  public Widget createWidget(Widget widget) {
+  public Widget createWidget(String topicId, Widget widget) {
+    widget.setTopicId(topicId);
     return repository.save(widget);
 //        Long id = (new Date()).getTime();
 //        widget.setId(id);
@@ -59,10 +60,13 @@ public class WidgetService {
 //        return null;
   }
   public Integer updateWidget(Long id, Widget newWidget) {
-    Widget originalWidget = findWidgetById(id);
+    Widget originalWidget = repository.findById(id).get();
 
     originalWidget.setText(newWidget.getText());
-//    originalWidget.setSrc(newWidget.getSrc());
+    originalWidget.setOrdered(newWidget.getOrdered());
+    originalWidget.setSrc(newWidget.getSrc());
+    originalWidget.setHeight(newWidget.getHeight());
+    originalWidget.setWidth(newWidget.getWidth());
 
     repository.save(originalWidget);
     return 1;
@@ -75,8 +79,9 @@ public class WidgetService {
 //        }
 //        return -1;
   }
-  public Integer deleteWidget(Long id) {
 
+
+  public Integer deleteWidget(Long id) {
     repository.deleteById(id);
     return 1;
 

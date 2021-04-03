@@ -24,7 +24,7 @@ public class WidgetController {
       @PathVariable("tid") String topicId,
       @RequestBody Widget widget) {
     widget.setTopicId(topicId);
-    return service.createWidget(widget);
+    return service.createWidget(topicId, widget);
   }
 
   @GetMapping("/api/topics/{tid}/widgets")
