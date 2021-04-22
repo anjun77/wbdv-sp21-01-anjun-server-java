@@ -62,11 +62,15 @@ public class WidgetService {
   public Integer updateWidget(Long id, Widget newWidget) {
     Widget originalWidget = repository.findById(id).get();
 
+    originalWidget.setType(newWidget.getType());
     originalWidget.setText(newWidget.getText());
-    originalWidget.setOrdered(newWidget.getOrdered());
     originalWidget.setSrc(newWidget.getSrc());
     originalWidget.setHeight(newWidget.getHeight());
     originalWidget.setWidth(newWidget.getWidth());
+    originalWidget.setSize(newWidget.getSize());
+    if(newWidget.getOrdered() != null) {
+      originalWidget.setOrdered(newWidget.getOrdered());
+    }
 
     repository.save(originalWidget);
     return 1;
